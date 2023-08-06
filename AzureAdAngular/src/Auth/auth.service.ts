@@ -18,6 +18,7 @@ export class AuthService {
         console.log(result);
 
         this.state.isLoggedIn$.next(true);
+        this.state.name$.next(result.account?.name);
         this.router.navigate(['/home']);
       },
       error: (error) => console.log(error),
@@ -31,6 +32,8 @@ export class AuthService {
         console.log(result);
 
         this.state.isLoggedIn$.next(false);
+        this.state.name$.next(undefined);
+
         this.router.navigate(['/login']);
       },
       error: (error) => console.log(error),

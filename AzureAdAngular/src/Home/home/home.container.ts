@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService } from '@auth/auth.service';
+import { StateService } from 'src/Store/state.service';
 
 @Component({
   selector: 'app-home-container',
@@ -7,7 +8,7 @@ import { AuthService } from '@auth/auth.service';
   styleUrls: ['home.container.scss'],
 })
 export class HomeContainerComponent {
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService, public state: StateService) {}
 
   logout() {
     this.authService.logout();

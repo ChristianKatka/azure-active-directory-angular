@@ -4,7 +4,12 @@
   </section>
 
   <section class="flex-column align-center-center">
-    <h3>Welcome logged in user. Happy times using the application</h3>
+    <h3 *ngIf="state.name$ | async as name">
+      Welcome {{ name }}. Happy times using the application
+    </h3>
+    <h3 *ngIf="!(state.name$ | async)">
+      Welcome logged in user. Happy times using the application
+    </h3>
     <button mat-raised-button (click)="logout()">logout</button>
   </section>
 </app-wrapper>
