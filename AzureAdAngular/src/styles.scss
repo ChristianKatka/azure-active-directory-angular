@@ -1,0 +1,29 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+.flex-row {
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.align-center-center {
+  place-content: center;
+  align-items: center;
+}
+
+.align-space-between-center {
+  place-content: center space-between;
+  align-items: center;
+}

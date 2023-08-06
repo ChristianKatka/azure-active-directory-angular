@@ -1,0 +1,26 @@
+<mat-toolbar
+  *ngIf="this.state.isLoggedIn$ | async"
+  class="flex-row align-space-between-center"
+>
+  <h1>Azure AD</h1>
+  <ul class="flex-row navigation-items">
+    <li>
+      <a style="cursor: pointer" routerLink="/home">Home</a>
+    </li>
+    <li>
+      <span style="cursor: pointer" (click)="logout()">Logout</span>
+    </li>
+  </ul>
+</mat-toolbar>
+
+<mat-toolbar
+  *ngIf="!(this.state.isLoggedIn$ | async)"
+  class="flex-row align-space-between-center"
+>
+  <h1>Azure AD</h1>
+  <ul class="flex-row navigation-items">
+    <li>
+      <span style="cursor: pointer" (click)="login()">Login</span>
+    </li>
+  </ul>
+</mat-toolbar>
