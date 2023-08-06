@@ -11,7 +11,7 @@ Tehty tämän microsoftin tarjoaman dokumentaation avulla:  [Learn microsoft](ht
 ## Kirjautumassa sisään microsoftin avulla
 <img width="626" alt="logging in" src="https://github.com/ChristianKatka/azure-active-directory-angular/assets/42738047/e83fa0a9-20a1-4d17-9c7e-30ef57a3e9b2">
 
-## Kirjautunut sisään näkymä
+## Kotinäkymä
 <img width="625" alt="logged in" src="https://github.com/ChristianKatka/azure-active-directory-angular/assets/42738047/2add278d-3a5d-4e4f-9574-a33e8a88ef00">
 
 
