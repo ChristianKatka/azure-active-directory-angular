@@ -25,3 +25,7 @@ Muuta clientId ja authority oman azure ad instanssisi mukaisiksi
 #Sekä muuta redirect urli sinun testi ympäristön mukaiseksi
 
 <img width="1728" alt="Screenshot 2023-10-30 at 11 47 00" src="https://github.com/ChristianKatka/azure-active-directory-angular/assets/42738047/eed96d2b-4bb9-4781-abb5-c9f242f61a51">
+
+
+## testaa täällä:
+https://d2m8bznvt1rj16.cloudfront.net
